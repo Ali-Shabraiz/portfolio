@@ -124,7 +124,7 @@
     height: max-content;
     width: max-content;
     align-self: center;
-    border-radius: 10px;
+    border-radius: 10px;  
     color: var(--wte);
     background-color: var(--primaryColor5);
     padding: 10px 15px;
