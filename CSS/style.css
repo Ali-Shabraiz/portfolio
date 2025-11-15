@@ -29,6 +29,7 @@
             flex-direction: column;
             overflow: hidden;
             justify-content: center;
+            display: none;
             /* flex-wrap: wrap; */
             gap: 20px;
         }
@@ -126,6 +127,7 @@
     align-self: center;
     border-radius: 10px;  
     color: var(--wte);
+
     background-color: var(--primaryColor5);
     padding: 10px 15px;
     font-weight: 600;
