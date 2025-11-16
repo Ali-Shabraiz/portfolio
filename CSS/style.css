@@ -4,6 +4,7 @@
             box-sizing: border-box;
             font-family: Arial, Helvetica, sans-serif;
             color: #fff;
+            scroll-behavior: smooth;
             
 
         }
@@ -13,26 +14,37 @@
             --primaryColor: #0d8083;
             --primaryColor5: rgba(13, 128, 131,0.5);
             --darkBlack: #000;
+            --b300: rgba(0,0,0,0.3);
             --teal: #1db5b8;
+        }
+        body{
+            background: var(--darkBlack);
+
         }
         button{
             cursor: pointer;
         }
-        .landingPage{
+        .container{
             width: 100%;
             position: relative;
             display: flex;
             height: 100vh;
-            /* background-image: url("assets/img/norbert-kowalczyk-hDSydnSLPAQ-unsplash.jpg"); */
-            background-size: cover;
-            background: var(--darkBlack);
-            flex-direction: column;
-            overflow: hidden;
-            justify-content: center;
-            /* display: none; */
-            /* flex-wrap: wrap; */
             gap: 20px;
+            justify-content: center;
+            padding: 30px;
+            flex-direction: column;
         }
+        .landingPage{
+            background-image: linear-gradient(var(--b300),var(--b300)), url("../assets/img/bg.jpg");
+            background-size: cover;
+            transition: 7.5s;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+      ::-webkit-scrollbar{
+        width: 0;
+      }
+      
         .landingPage .img{
             width: 30%;
             position: absolute;
@@ -55,9 +67,12 @@
             padding: 10px;
             position: fixed;
             top: 0;
+            left: 0;
             display: flex;
             align-items: center;
+            z-index: 99;
             justify-content: space-between;
+            background-color: var(--b300);
         }
         nav .logo{
             display: flex;
@@ -97,9 +112,12 @@
             cursor: pointer;
             font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
-        nav ul li.active{
+        nav ul li.active a{
             color: var(--primaryColor);
             text-shadow:  0 0 10px var(--primaryColor);
+        }
+        nav ul li a{
+            text-decoration: none;
         }
         .bubble{
             position: absolute;
@@ -113,24 +131,31 @@
             filter: blur(80px);
             /* rotate: 45deg; */
         }
-.landingPage .mainHeading{
+.container .mainHeading{
     align-self: center;
-    text-align: center;
+    /* text-align: center; */
     font-size: 5rem;
     font-weight: 600;
     width: 100%;
 
 }
-.landingPage button{
+ button{
     height: max-content;
     width: max-content;
-    align-self: center;
+    /* align-self: center; */
     border-radius: 10px;  
     color: var(--wte);
 
-    background-color: var(--primaryColor5);
+    background-color: var(--primaryColor);
     padding: 10px 15px;
     font-weight: 600;
     border: none;
     font-size: 17px;
+}
+.container p{
+    width: 90%;
+    text-align: center;
+    align-self: center;
+    font-size: 17px;
+    font-family: 'Courier New', Courier, monospace;
 }
