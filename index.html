@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deevolar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
@@ -17,6 +18,16 @@
         --blk: black;
         --wte:white;
         --wte15: #ffffff1A;
+        --primaryColor:rgb(245, 131,39);
+    }
+    h1{
+          font-family: "Unbounded", sans-serif;
+
+
+    }
+    .logo{
+        height: 50px;
+        filter: invert(1);
     }
     body{
         background: var(--blk);
@@ -30,6 +41,9 @@
         padding: 10px 25px;
         width: 100%;
         justify-content: space-between;
+        position: fixed;
+        top: 0;
+        left: 0;
         align-items: center;
     }
     nav ul{
@@ -43,11 +57,11 @@
         border-radius: 140px;
     }
     nav ul li{
-        font-family: Arial, Helvetica, sans-serif;
         text-transform: uppercase;
         font-size: 0.8em;
         border-radius: 30px;
-        padding: 5px 10px;
+        padding: 10px 15px;
+        align-content: center;
 
   font-family: "Unbounded", sans-serif;
   /* font-optical-sizing: auto; */
@@ -56,24 +70,80 @@
 
     }
     nav ul li.active{
-    color: rgb(245, 131,39);
+    color: var(--primaryColor);
     background: var(--wte15);
+    }
+    button{
+        background: var(--primaryColor);
+        color: var(--blk);
+        border-radius: 30px;
+        padding: 15px;
+        text-transform: uppercase;
+        font-family: "Unbounded", sans-serif;
+        font-size: 0.8em;
+        display: flex;
+        width: max-content;
+        gap: 10px;
+        
+    }
+    .primaryColor{
+        color: var(--primaryColor);
+    }
+    .landingPage{
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+        /* text-align: center; */
+        height: 100vh;
+        background-image: url("./assets/img/orangeBg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        gap: 20px;
+        /* font-size: 2.5rem; */
+        padding: 50px;
+    }
+    h1{
+        font-size: 2.4rem;
+        text-align: justify;
+    }
+    .social-media{
+        display: flex;
+        padding: 10px;
+        width: max-content;
+        /* background: var(--wte15); */
+        border-radius: 30px;
+        gap: 20px;
+    }
+    .social-media span{
+        font-size: 18px;
+        color: var(--primaryColor);
     }
 </style>
 </head>
 <body>
     <div class="landingPage">
         <nav>
-            <div class="logo">JEllos</div>
+            <img src="./assets/img/logo.png" class="logo" alt="">
             <ul>
                 <li class="active">Home</li>
                 <li>About</li>
                 <li>Services</li>
                 <li>Projects</li>
                 <li>Reviews</li>
+                <button><span>Contact US</span><span class="fa fa-arrow-right"></span></button>
             </ul>
-            <button>Contact US</button>
         </nav>
+        <h1>Tell your Idea. <br><span class="primaryColor">Trust DeeporaMart</span></h1>
+        <button><span>Contact us</span><span class="fa fa-arrow-right"></span></button>
+        <div class="social-media">
+            <span class="fab fa-facebook"></span>
+            <span class="fab fa-twitter"></span>
+            <span class="fab fa-linkedin"></span>
+            <span class="fab fa-tiktok"></span>
+            <span class="fab fa-instagram"></span>
+        </div>
     </div>
 </body>
 </html>
