@@ -3,37 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deevolar || Home</title>
-    <link rel="shortcut icon" href="./assets/img/Dlogo.png" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Deevolar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    :root{
+        --blk: black;
+        --wte:white;
+        --wte15: #ffffff1A;
+    }
+    body{
+        background: var(--blk);
+        color: var(--wte);
+    }
+    /* .landingPage{
+        background-color: var(--blk);
+    } */
+    nav{
+        display: flex;
+        padding: 10px 25px;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav ul{
+        display: flex;
+        list-style: none;
+        gap: 35px;
+        border: 1px solid var(--wte15);
+        background: var(--blk);
+        box-shadow: rgba(0, 0, 0, 0.32) 0px -9px 22px 0px;
+        padding: 7px 7px;
+        border-radius: 140px;
+    }
+    nav ul li{
+        font-family: Arial, Helvetica, sans-serif;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        border-radius: 30px;
+        padding: 5px 10px;
+
+  font-family: "Unbounded", sans-serif;
+  /* font-optical-sizing: auto; */
+  /* font-weight: weight; */
+  /* font-style: normal; */
+
+    }
+    nav ul li.active{
+    color: rgb(245, 131,39);
+    background: var(--wte15);
+    }
+</style>
 </head>
 <body>
-    <div class="landingPage container">
-        <a name="#"></a>
-        <!-- <img src="./assets/img/robo.png" alt="" class="img">
-          -->
+    <div class="landingPage">
         <nav>
-            <div class="logo">
-                <img src="./assets/img/Dlogo.png" alt="Deevolar Logo">
-                 <h1>eevolar</h1>
-            </div>
+            <div class="logo">JEllos</div>
             <ul>
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li class="active">Home</li>
+                <li>About</li>
+                <li>Services</li>
                 <li>Projects</li>
-                <li>Portfolio</li>
-        <button>Get Started</button>
+                <li>Reviews</li>
             </ul>
+            <button>Contact US</button>
         </nav>
-            <!-- <div class="bubble"></div> -->
-        <h1 class="mainHeading">Buliding Digital <br> Success Stories</h1>
-        <button>Get Started</button>
-    </div>
-    <div class="about container">
-        <a name="about"></a>
-        <h1 class="mainHeading">About</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ratione iste impedit harum commodi eius perspiciatis, similique beatae incidunt aspernatur deserunt recusandae a repellat exercitationem sed. Quibusdam, quidem. Aspernatur, similique? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat quam quas nulla molestias provident cumque, iste beatae rem, molestiae quia dicta explicabo fugit sunt. Doloribus mollitia at quae perspiciatis itaque!</p>
     </div>
 </body>
 </html>
