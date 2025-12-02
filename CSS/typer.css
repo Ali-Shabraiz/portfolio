@@ -1,0 +1,40 @@
+  #changing-text {
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    /* color: var(--primaryColor); */
+    
+  }
+
+  .changing-text-light{
+    animation: typing 3s steps(15), blink-light 0.5s step-end infinite;
+
+
+  }
+  .changing-text-dark{
+    animation: typing 3s steps(15), blink-dark 0.5s step-end infinite;
+
+
+  }
+
+ 
+  
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+
+  @keyframes blink-light {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
+  @keyframes blink-dark {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+  }
+
+ 
+  
+ 

@@ -1,127 +1,203 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deevolar</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
-<style>
-    *{
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-    }
-    :root{
-        --blk: black;
-        --wte:white;
-        --wte15: #ffffff1A;
-        --primaryColor:rgb(245, 131,39);
-    }
-    h1{
-          font-family: "Unbounded", sans-serif;
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=TASA+Orbiter:wght@400..800&family=Unbounded:wght@200..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+
+        :root {
+            --blk: black;
+            --wte: white;
+            --wte5: rgba(255, 255, 255, 0.5);
+            --wte15: #ffffff1A;
+            --primaryColor: rgb(245, 131, 39);
+        }
+
+        h1 {
+            font-family: "Unbounded", sans-serif;
 
 
-    }
-    .logo{
-        height: 50px;
-        filter: invert(1);
-    }
-    body{
-        background: var(--blk);
-        color: var(--wte);
-    }
-    /* .landingPage{
+        }
+
+        .logo {
+            height: 30px;
+            filter: invert(1);
+        }
+
+        body {
+            background: var(--blk);
+            color: var(--wte);
+        }
+
+        /* .landingPage{
         background-color: var(--blk);
     } */
-    nav{
-        display: flex;
-        padding: 10px 25px;
-        width: 100%;
-        justify-content: space-between;
-        position: fixed;
-        top: 0;
-        left: 0;
-        align-items: center;
-    }
-    nav ul{
-        display: flex;
-        list-style: none;
-        gap: 35px;
-        border: 1px solid var(--wte15);
-        background: var(--blk);
-        box-shadow: rgba(0, 0, 0, 0.32) 0px -9px 22px 0px;
-        padding: 7px 7px;
-        border-radius: 140px;
-    }
-    nav ul li{
-        text-transform: uppercase;
-        font-size: 0.8em;
-        border-radius: 30px;
-        padding: 10px 15px;
-        align-content: center;
+        nav {
+            display: flex;
+            padding: 10px 25px;
+            width: 100%;
+            justify-content: space-between;
+            position: fixed;
+            top: 0;
+            left: 0;
+            align-items: center;
+        }
 
-  font-family: "Unbounded", sans-serif;
-  /* font-optical-sizing: auto; */
-  /* font-weight: weight; */
-  /* font-style: normal; */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 35px;
+            border: 1px solid var(--wte15);
+            background: var(--blk);
+            box-shadow: rgba(0, 0, 0, 0.32) 0px -9px 22px 0px;
+            padding: 7px 7px;
+            border-radius: 140px;
+        }
 
-    }
-    nav ul li.active{
-    color: var(--primaryColor);
-    background: var(--wte15);
-    }
-    button{
-        background: var(--primaryColor);
-        color: var(--blk);
-        border-radius: 30px;
-        padding: 15px;
-        text-transform: uppercase;
-        font-family: "Unbounded", sans-serif;
-        font-size: 0.8em;
-        display: flex;
-        width: max-content;
-        gap: 10px;
+        nav ul li {
+            text-transform: uppercase;
+            font-size: 0.8em;
+            border-radius: 30px;
+            padding: 10px 15px;
+            align-content: center;
+
+            font-family: "Unbounded", sans-serif;
+            /* font-optical-sizing: auto; */
+            /* font-weight: weight; */
+            /* font-style: normal; */
+
+        }
+
+        nav ul li.active {
+            color: var(--primaryColor);
+            background: var(--wte15);
+        }
+
+        button {
+            background: var(--primaryColor);
+            color: var(--blk);
+            border-radius: 30px;
+            padding: 15px;
+            text-transform: uppercase;
+            font-family: "Unbounded", sans-serif;
+            font-size: 0.8em;
+            display: flex;
+            width: max-content;
+            gap: 10px;
+
+        }
+
+        .primaryColor {
+            color: var(--primaryColor);
+        }
+
+        .landingPage {
+            display: flex;
+            align-items: center;
+            /* flex-direction: column; */
+            /* text-align: center; */
+            height: 100vh;
+            background-image: url("./assets/img/orangeBg.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: space-between;
+            gap: 20px;
+            /* font-size: 2.5rem; */
+            padding: 50px 20px;
+            padding-bottom: 0;
+            position: relative;
+        }
+        .landingPage .content{
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            gap: 20px;
         
-    }
-    .primaryColor{
-        color: var(--primaryColor);
-    }
-    .landingPage{
-        display: flex;
-        /* align-items: center; */
-        flex-direction: column;
-        /* text-align: center; */
-        height: 100vh;
-        background-image: url("./assets/img/orangeBg.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        justify-content: center;
-        gap: 20px;
-        /* font-size: 2.5rem; */
-        padding: 50px;
-    }
-    h1{
-        font-size: 2.4rem;
-        text-align: justify;
-    }
-    .social-media{
-        display: flex;
-        padding: 10px;
-        width: max-content;
-        /* background: var(--wte15); */
-        border-radius: 30px;
-        gap: 20px;
-    }
-    .social-media span{
-        font-size: 18px;
-        color: var(--primaryColor);
-    }
-</style>
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            text-align: justify;
+        }
+
+        .social-media {
+            display: flex;
+            padding: 10px;
+            width: max-content;
+            /* background: var(--wte15); */
+            border-radius: 30px;
+            gap: 20px;
+        }
+
+        .social-media span {
+            font-size: 18px;
+            color: var(--primaryColor);
+        }
+
+        .hero {
+            width: 200px;
+            height: auto;
+            object-fit:contain;
+        } 
+        .reviews{
+            list-style-type: none;
+            width: 375px;
+            /* height: 150PX; */
+            padding: 10px;
+            flex-direction: column;
+            display: flex;
+            height: max-content;
+            /* background: red; */
+            gap: 15px;
+        }
+        .reviews li{
+            /* background: ; */
+            height: 140px;
+            display: flex;
+            gap: 20px;
+            border: 1px solid var(--wte15);
+            padding: 20px;
+            border-radius: 20px;
+            backdrop-filter: blur(3px);
+            background-color: var(--wte15);
+            scale: 0.8;
+        }
+        .reviews li h2{
+            color: var(--primaryColor);
+            font-family: "Unbounded", sans-serif;
+
+        }
+        .reviews li p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 0.8em;
+            color: var(--wte5);
+            text-align: justify;
+        }
+        .reviews li img{
+            height: 100px;
+        }
+    </style>
+    <link rel="stylesheet" href="./CSS/typer.css">
 </head>
+
 <body>
     <div class="landingPage">
         <nav>
@@ -135,15 +211,32 @@
                 <button><span>Contact US</span><span class="fa fa-arrow-right"></span></button>
             </ul>
         </nav>
-        <h1>Tell your Idea. <br><span class="primaryColor">Trust DeeporaMart</span></h1>
-        <button><span>Contact us</span><span class="fa fa-arrow-right"></span></button>
-        <div class="social-media">
-            <span class="fab fa-facebook"></span>
-            <span class="fab fa-twitter"></span>
-            <span class="fab fa-linkedin"></span>
-            <span class="fab fa-tiktok"></span>
-            <span class="fab fa-instagram"></span>
+        <ul class="reviews">
+            <li><img src="./assets/img/man.png"><div class="reviewContent"><h2>Elon Musk</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p></div></li>
+            <li><img src="./assets/img/man.png"><div class="reviewContent"><h2>Elon Musk</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p></div></li>
+            <li><img src="./assets/img/man.png"><div class="reviewContent"><h2>Elon Musk</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p></div></li>
+        </ul>
+        <div class="content">
+            <h1>Tell your Idea. <br><span class="primaryColor">Trust DeeporaMart</span></h1>
+            <h1 class="auto-typer">We are <span id="changing-text" class="primaryColor"> </span></h1>
+            <button><span>Contact us</span><span class="fa fa-arrow-right"></span></button>
+            <div class="social-media">
+                <span class="fab fa-facebook"></span>
+                <span class="fab fa-twitter"></span>
+                <span class="fab fa-linkedin"></span>
+                <span class="fab fa-tiktok"></span>
+                <span class="fab fa-instagram"></span>
+            </div>
         </div>
+        <ul class="reviews">
+            <li><img src="./assets/img/man.png"><div class="reviewContent"><h2>Elon Musk</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p></div></li>
+            <li><img src="./assets/img/man.png"><div class="reviewContent"><h2>Elon Musk</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p></div></li>
+            <li><img src="./assets/img/man.png"><div class="reviewContent"><h2>Elon Musk</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p></div></li>
+
+        </ul>
+        <!-- <img src="./assets/img/elon.png" alt="" class="hero"> -->
     </div>
+    <script src="./JS/typer.js"></script>
 </body>
+
 </html>
