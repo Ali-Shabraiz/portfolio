@@ -18,7 +18,7 @@
             padding: 0;
             margin: 0;
             box-sizing: border-box;
-            
+
         }
 
         :root {
@@ -27,6 +27,9 @@
             --wte5: rgba(255, 255, 255, 0.5);
             --wte15: #ffffff1A;
             --primaryColor: rgb(245, 131, 39);
+        }
+        .logoImg{
+            filter: invert(1);
         }
 
         h1 {
@@ -57,6 +60,7 @@
             top: 0;
             left: 0;
             align-items: center;
+            z-index: 99;
         }
 
         nav ul {
@@ -124,13 +128,14 @@
             padding-bottom: 0;
             position: relative;
         }
-        .landingPage .content{
+
+        .landingPage .content {
             display: flex;
             flex-direction: column;
             height: 100%;
             justify-content: center;
             gap: 20px;
-        
+
         }
 
         h1 {
@@ -155,9 +160,10 @@
         .hero {
             width: 200px;
             height: auto;
-            object-fit:contain;
-        } 
-        .reviews{
+            object-fit: contain;
+        }
+
+        .reviews {
             list-style-type: none;
             width: 375px;
             /* height: 150PX; */
@@ -168,7 +174,8 @@
             /* background: red; */
             gap: 15px;
         }
-        .reviews li{
+
+        .reviews li {
             /* background: ; */
             height: 140px;
             display: flex;
@@ -180,19 +187,64 @@
             background-color: var(--wte15);
             scale: 0.8;
         }
-        .reviews li h2{
+
+        .reviews li h2 {
             color: var(--primaryColor);
             font-family: "Unbounded", sans-serif;
 
         }
-        .reviews li p{
+
+        .reviews li p {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 0.8em;
             color: var(--wte5);
             text-align: justify;
         }
-        .reviews li img{
+        ul{
+            list-style-type: none;
+        }
+
+        .reviews li img {
             height: 100px;
+        }
+
+        section {
+            height: 100vh;
+        }
+        footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            /* background: red; */
+            position: relative;
+            padding: 50px;
+            padding-bottom: 20px;
+            gap: 60px;
+        }
+        footer .lists{
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+        }
+        footer .lists li{
+            text-transform: uppercase;
+            font-family: "Unbounded", sans-serif;
+            /* font-size: 0.8em; */
+        }
+        footer .lists li ul{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        footer .social-media span{
+            border: 2px solid var(--primaryColor);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            align-content: center;
+        }
+        footer p{
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
     <link rel="stylesheet" href="./CSS/typer.css">
@@ -212,9 +264,24 @@
             </ul>
         </nav>
         <ul class="reviews">
-            <li><img src="./assets/img/man.png"><div class="reviewContent"><h2>Elon Musk</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p></div></li>
-            <li><img src="./assets/img/man.png"><div class="reviewContent"><h2>Elon Musk</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p></div></li>
-            <li><img src="./assets/img/man.png"><div class="reviewContent"><h2>Elon Musk</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p></div></li>
+            <li><img src="./assets/img/man.png">
+                <div class="reviewContent">
+                    <h2>Elon Musk</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p>
+                </div>
+            </li>
+            <li><img src="./assets/img/man.png">
+                <div class="reviewContent">
+                    <h2>Elon Musk</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p>
+                </div>
+            </li>
+            <li><img src="./assets/img/man.png">
+                <div class="reviewContent">
+                    <h2>Elon Musk</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p>
+                </div>
+            </li>
         </ul>
         <div class="content">
             <h1>Tell your Idea. <br><span class="primaryColor">Trust DeeporaMart</span></h1>
@@ -229,13 +296,73 @@
             </div>
         </div>
         <ul class="reviews">
-            <li><img src="./assets/img/man.png"><div class="reviewContent"><h2>Elon Musk</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p></div></li>
-            <li><img src="./assets/img/man.png"><div class="reviewContent"><h2>Elon Musk</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p></div></li>
-            <li><img src="./assets/img/man.png"><div class="reviewContent"><h2>Elon Musk</h2><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p></div></li>
+            <li><img src="./assets/img/man.png">
+                <div class="reviewContent">
+                    <h2>Elon Musk</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p>
+                </div>
+            </li>
+            <li><img src="./assets/img/man.png">
+                <div class="reviewContent">
+                    <h2>Elon Musk</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p>
+                </div>
+            </li>
+            <li><img src="./assets/img/man.png">
+                <div class="reviewContent">
+                    <h2>Elon Musk</h2>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipi.</p>
+                </div>
+            </li>
 
         </ul>
         <!-- <img src="./assets/img/elon.png" alt="" class="hero"> -->
     </div>
+    <section>
+        <h1>ht</h1>
+    </section>
+    <footer>
+        <ul class="lists">
+            <li><img src="./assets/img/logo.png" class="logoImg" alt="logo Image" width="200"></li>
+            <li>
+                <ul>
+                    <li>home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    <li>home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </li>
+        </ul>
+        <hr width="100%">
+        <div class="social-media">
+            <span class="fab fa-facebook"></span>
+            <span class="fab fa-twitter"></span>
+            <span class="fab fa-linkedin"></span>
+            <span class="fab fa-tiktok"></span>
+            <span class="fab fa-instagram"></span>
+        </div>
+        <p>&copy; Copy right protected, All rights should be reserved to Mr. Ali Shabraiz</p>
+    </footer>
     <script src="./JS/typer.js"></script>
 </body>
 
